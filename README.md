@@ -66,7 +66,7 @@ plt.xlabel("Iteration")
 plt.ylabel("$J(\Theta)$")
 plt.title("Cost function using Grading Descent")
 
-
+```
 ## Output:
 ![linear](sam.png)
 ![gradient descent](sam1.png)
