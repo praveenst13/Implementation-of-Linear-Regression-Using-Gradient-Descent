@@ -104,7 +104,7 @@ h(x) Value
 Cost function using Gradient Descent Graph
 
 ![gradient descent](sam3.png)
-.Profit Prediction Graph
+Profit Prediction Graph
 
 ![gradient descent](sam4.png)
 Profit for the Population 35,000 & Profit for the Population 70,000
