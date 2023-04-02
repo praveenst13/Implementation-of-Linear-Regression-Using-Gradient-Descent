@@ -69,10 +69,46 @@ plt.xlabel("Iteration")
 plt.ylabel("$J(\Theta)$")
 plt.title("Cost function using Grading Descent")
 
+plt.scatter(data[0],data[1])
+x_value=[x for x in range(25)]
+y_value=[y*theta[1]+theta[0] for y in x_value]
+plt.plot(x_value,y_value,color="r")
+plt.xticks(np.arange(5,30,step=5))
+plt.yticks(np.arange(-5,30,step=5))
+plt.xlabel("Population of City(10,000s)")
+plt.ylabel("Profit ($10,000)")
+plt.title("Profit Prediction")
+
+def predict(x,theta):
+   
+    predictions=np.dot(theta.transpose(),x)
+    return predictions[0]
+
+predict1=predict(np.array([1,3.5]),theta)*10000
+print("For Population = 35000, we predict a profit of $"+str(round(predict1,0)))
+
+predict2=predict(np.array([1,7]),theta)*10000
+print("For Population = 70000, we predict a profit of $"+str(round(predict2,0)))
+
 ```
 ## Output:
+Profit Prediction graph
+
 ![linear](sam.png)
+Compute Cost Value
+
 ![gradient descent](sam1.png)
+h(x) Value
+
+![gradient descent](sam2.png)
+Cost function using Gradient Descent Graph
+
+![gradient descent](sam3.png)
+.Profit Prediction Graph
+
+![gradient descent](sam4.png)
+Profit for the Population 35,000 & Profit for the Population 70,000
+![gradient descent](sam5.png)
 
 
 ## Result:
